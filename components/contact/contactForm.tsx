@@ -15,11 +15,15 @@ import {
 import { Button } from "../ui/button";
 import { Input } from "../ui/input";
 import { Textarea } from "../ui/textarea";
+import GlobalLayout from "../nav/global";
 
 const contactSchema = z.object({
-  name: z.string().min(2).max(50),
-  email: z.string().min(2).max(50),
-  message: z.string().min(2).max(2000),
+  name: z.string().min(1, { message: "Le nom est obligatoire" }).max(50),
+  email: z.string().email({ message: "Entrer une adresse mail valide" }),
+  message: z
+    .string()
+    .min(1, { message: "Le messag est obligatoire" })
+    .max(2000),
 });
 
 const ContactForm = () => {
@@ -40,7 +44,7 @@ const ContactForm = () => {
     console.log(values);
   }
   return (
-    <div className="p-2">
+    <GlobalLayout title="Contact">
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
           <div className="flex justify-between gap-4">
@@ -49,7 +53,7 @@ const ContactForm = () => {
               name="name"
               render={({ field }) => (
                 <FormItem className="w-full">
-                  <FormLabel>Nome</FormLabel>
+                  <FormLabel>Nom</FormLabel>
                   <FormControl>
                     <Input placeholder="Votre nom" {...field} />
                   </FormControl>
@@ -82,17 +86,14 @@ const ContactForm = () => {
                 <FormControl>
                   <Textarea placeholder="Votre message" {...field} />
                 </FormControl>
-                <FormDescription>
-                  This is your public display name.
-                </FormDescription>
                 <FormMessage />
               </FormItem>
             )}
           />
-          <Button type="submit">Submit</Button>
+          <Button type="submit">Soumettre</Button>
         </form>
       </Form>
-    </div>
+    </GlobalLayout>
   );
 };
 

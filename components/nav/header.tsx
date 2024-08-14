@@ -37,8 +37,8 @@ const links = [
 
 const Header = () => {
   return (
-    <div className=" my-4 flex items-center justify-between max-md:p-2">
-      <nav className="md:hidden">
+    <div className=" my-4 flex items-end justify-between max-md:p-2">
+      <nav className="md:hidden py-2">
         <Sheet>
           <SheetTrigger asChild>
             <Menu />
@@ -56,15 +56,15 @@ const Header = () => {
           </SheetContent>
         </Sheet>
       </nav>
-      <Link href="/" className="font-bold text-2xl text-sky-600">
+      <Link href="/" className="font-bold text-4xl text-sky-600 mb-1">
         {/*         <BabyIcon className="" />
          */}{" "}
-        LK
+        KL
         <span className="font-thin text-lg text-black dark:text-white">
           Education
         </span>
       </Link>
-      <nav className="max-md:hidden flex gap-6 items-center font-semibold ">
+      <nav className="max-md:hidden mb-1 flex gap-6 items-center font-semibold ">
         {links.map((lk: any) => (
           <Link key={lk.id} href={lk.href} className="hover:text-sky-600">
             {lk.link}
@@ -91,7 +91,7 @@ const SubMenu = () => {
 
   return (
     <>
-      {/*       <SheetClose asChild>
+      <SheetClose asChild>
         <Button
           className="bg-transparent text-black dark:text-white"
           onClick={() => router.push("/contact")}
@@ -99,7 +99,7 @@ const SubMenu = () => {
           Contact
         </Button>
       </SheetClose>
- */}
+
       <SheetClose asChild>
         <Button
           className="bg-transparent text-black dark:text-white"
@@ -127,14 +127,14 @@ const SubMenu = () => {
         </Button>
       </SheetClose>
 
-      <SheetClose asChild>
+      {/*       <SheetClose asChild>
         <Button
           className="bg-transparent text-black dark:text-white"
           onClick={() => router.push("/home")}
         >
           Accueil
         </Button>
-      </SheetClose>
+      </SheetClose> */}
     </>
   );
 };

@@ -91,7 +91,7 @@ const SubMenu = () => {
 
   return (
     <>
-      <SheetClose asChild>
+      {/*       <SheetClose asChild>
         <Button
           className="bg-transparent text-black dark:text-white"
           onClick={() => router.push("/contact")}
@@ -99,7 +99,7 @@ const SubMenu = () => {
           Contact
         </Button>
       </SheetClose>
-
+ */}
       <SheetClose asChild>
         <Button
           className="bg-transparent text-black dark:text-white"

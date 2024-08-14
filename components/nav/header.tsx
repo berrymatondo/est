@@ -59,7 +59,10 @@ const Header = () => {
       <Link href="/" className="font-bold text-2xl text-sky-600">
         {/*         <BabyIcon className="" />
          */}{" "}
-        LK<span className="font-thin text-lg text-black">Education</span>
+        LK
+        <span className="font-thin text-lg text-black dark:text-white">
+          Education
+        </span>
       </Link>
       <nav className="max-md:hidden flex gap-6 items-center font-semibold ">
         {links.map((lk: any) => (
@@ -72,7 +75,9 @@ const Header = () => {
       <div className="flex items-center gap-4">
         <ModeToggle />
 
-        <Button className="max-md:hidden">Connexion</Button>
+        <Button variant="outline" className="max-md:hidden">
+          Connexion
+        </Button>
         <LogIn className="text-green-600 md:hidden " />
       </div>
     </div>

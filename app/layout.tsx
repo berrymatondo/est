@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/nav/header";
 import Footer from "@/components/nav/footer";
+import { ThemeProvider } from "@/components/theme-provider";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -19,11 +20,18 @@ export default function RootLayout({
       <body
         suppressHydrationWarning={true}
         /*         className=" min-h-dvh flex flex-col bg-gradient-to-tr from-gray-100 to-sky-200/60"
-         */ className=" min-h-dvh flex flex-col "
+         */ className=" min-h-dvh flex flex-col md:max-w-3xl mx-auto"
       >
-        <Header />
-        {children}
-        <Footer />
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <Header />
+          {children}
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );

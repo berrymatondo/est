@@ -8,7 +8,7 @@ import { ArrowBigRight, Fingerprint } from "lucide-react";
 export default function Home() {
   return (
     <GlobalLayout title="">
-      <div className="pb-10">
+      <div className="pb-10 px-2">
         <div className="flex items-center max-md:flex-col-reverse gap-4">
           <div className="flex flex-col gap-4 md:gap-8">
             <h1 className="max-md:text-center text-3xl text-sky-600 font-semibold leading-none tracking-tight">
@@ -82,7 +82,7 @@ export default function Home() {
           </ul>
           <br />
           <p className="flex items-center">
-            <ArrowBigRight className="text-sky-600" />{" "}
+            <ArrowBigRight className="text-sky-600 max-md:hidden" />{" "}
             <span className="">
               {
                 "Rejoignez notre communauté et découvrez comment concilier vos valeurs et les réalités de la parentalité."

@@ -30,7 +30,7 @@ import { ModeToggle } from "../toggle";
 const links = [
   /*   { id: 1, link: "Accueil", href: "/" },
    */ { id: 2, link: "Equipe", href: "/team" },
-  { id: 3, link: "Modules", href: "/modules" },
+  { id: 3, link: "Formations", href: "/modules" },
   { id: 4, link: "Liens utiles", href: "/liens" },
   { id: 5, link: "Contact", href: "/contact" },
 ];
@@ -122,7 +122,7 @@ const SubMenu = () => {
           className="bg-transparent text-black dark:text-white"
           onClick={() => router.push("/modules")}
         >
-          Modules
+          Formations
         </Button>
       </SheetClose>
 

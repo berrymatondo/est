@@ -1,5 +1,5 @@
 import Image from "next/image";
-import im1 from "../public/pres.jpg";
+import im1 from "../public/est2.jpg";
 import im2 from "../public/estp2.png";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import GlobalLayout from "@/components/nav/global";

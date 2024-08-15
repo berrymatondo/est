@@ -33,7 +33,7 @@ const GlobalLayout = ({
   const router = useRouter();
   return (
     <div className="flex my-2 max-md:px-2">
-      <Card className="mt-12 w-full border-none">
+      <Card className="mt-12 max-md:mt-6 w-full border-none">
         <CardHeader className="py-4 px-0">
           <CardTitle className="text-sky-600 text-3xl">
             <div className="flex items-center justify-between">

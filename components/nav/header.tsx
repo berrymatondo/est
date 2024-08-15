@@ -36,6 +36,7 @@ const links = [
 ];
 
 const Header = () => {
+  const router = useRouter();
   return (
     <div className=" my-4 flex items-end justify-between max-md:p-2">
       <nav className="md:hidden py-2">
@@ -75,10 +76,17 @@ const Header = () => {
       <div className="flex items-center gap-4">
         <ModeToggle />
 
-        <Button variant="outline" className="max-md:hidden">
+        <Button
+          onClick={() => router.push("/auth/login")}
+          variant="outline"
+          className="max-md:hidden"
+        >
           Connexion
         </Button>
-        <LogIn className="text-green-600 md:hidden " />
+        <LogIn
+          onClick={() => router.push("/auth/login")}
+          className="text-green-600 md:hidden "
+        />
       </div>
     </div>
   );

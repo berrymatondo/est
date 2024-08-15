@@ -35,7 +35,7 @@ export default function Home() {
         <div className="mt-4">
           <p>
             {
-              "L'éducation de vos enfants, c'est un parcours unique et souvnt semé d'embûches."
+              "L'éducation de nos enfants, c'est un parcours unique et souvent semé d'embûches."
             }
           </p>
 
@@ -56,26 +56,26 @@ export default function Home() {
             <li className="flex  md:items-center gap-2">
               {/*               <div className="h-1.5 w-1.5 rounded-full bg-sky-600"></div>
                */}{" "}
-              <span className="italic text-sky-800">
-                {"Des clés pour une éducation positive et bienveillante"}
+              <span className="italic text-sky-800 dark:text-sky-400">
+                {"Des clés pour une éducation positive et bienveillante."}
               </span>
             </li>
             <li className="flex items-center gap-2">
-              <span className="italic text-sky-800">
+              <span className="italic text-sky-800 dark:text-sky-400">
                 {
-                  "Des outils pour développer l'autonomie et la confiance en soi de votre enfant"
+                  "Des outils pour développer l'autonomie et la confiance en soi de votre enfant."
                 }
               </span>
             </li>
             <li className="flex items-center gap-2">
-              <span className="italic text-sky-800">
-                {"Un espace d'échange et de partage avec d'autres parents"}
+              <span className="italic text-sky-800 dark:text-sky-400">
+                {"Un espace d'échange et de partage avec d'autres parents."}
               </span>
             </li>
             <li className="flex items-center gap-2">
-              <span className="italic text-sky-800">
+              <span className="italic text-sky-800 dark:text-sky-400">
                 {
-                  "Des formations pour approfondir vos connaissances et vos compétences"
+                  "Des formations pour approfondir vos connaissances et vos compétences."
                 }
               </span>
             </li>

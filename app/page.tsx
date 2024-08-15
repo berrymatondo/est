@@ -18,7 +18,7 @@ export default function Home() {
               {"Nous sommes "} <strong>Kclaisse</strong> &{" "}
               <strong>Laetitia</strong>,{" "}
               {
-                "chacune de nous est mariée et sommmes des pationnées de la petite enfance."
+                "épouses et mères, et sommmes  des pationnées de la petite enfance."
               }
             </p>
           </div>

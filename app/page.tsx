@@ -6,15 +6,21 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import GlobalLayout from "@/components/nav/global";
 import { ArrowBigRight, Fingerprint } from "lucide-react";
 import { useRouter } from "next/navigation";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 export default function Home() {
   const router = useRouter();
   return (
     <GlobalLayout title="">
-      <div className="pb-10 px-2">
-        <div className="flex items-center max-md:flex-col-reverse gap-4">
+      <div className="md:pb-10 px-2">
+        <div className="flex items-center max-md:flex-col-reverse md:gap-4">
           <div className="flex flex-col gap-4 md:gap-8">
-            <h1 className="max-md:text-center text-3xl text-sky-600 font-semibold leading-none tracking-tight">
+            <h1 className="max-md:text-center text-3xl max-md:text-2xl text-sky-600 font-semibold leading-none tracking-tight">
               {"Qui sommes-nous ?"}
             </h1>
             <p>
@@ -25,18 +31,18 @@ export default function Home() {
               }
             </p>
           </div>
-          <div className="max-md:w-44 rounded-full overflow-hidden">
+          <div className="max-md:w-32 rounded-full overflow-hidden">
             <Image
               src={im1}
               alt="fond"
-              width={300}
-              height={300}
+              width={250}
+              height={250}
               // layout="responsive"
             />
           </div>
         </div>
         <div className="mt-4">
-          <p>
+          <p className="max-md:text-xs max-md:text-center text-sky-800 font-medium italic">
             {
               "L'éducation de nos enfants, c'est un parcours unique et souvent semé d'embûches."
             }
@@ -50,7 +56,59 @@ export default function Home() {
             }
           </p>
           <br />
-          <p>
+
+          <Accordion type="single" collapsible className="md:hidden w-full ">
+            <AccordionItem value="item-1">
+              <AccordionTrigger className="text-sky-700 bg-gradient-to-tr from-white to-sky-100 text-xs p-2 rounded-full">
+                {"Eduquer un enfant n'est pas juste mettre des règles!"}
+              </AccordionTrigger>
+              <AccordionContent>
+                <ul className="max-md:hidden pl-4 md:pl-8 ">
+                  <li className="flex  md:items-center gap-2">
+                    {/*               <div className="h-1.5 w-1.5 rounded-full bg-sky-600"></div>
+                     */}{" "}
+                    <span className="italic text-sky-800 dark:text-sky-400">
+                      {
+                        "- Des outils pour définir ou renforcer la vision que vous avez de l'éducation de vos enfants."
+                      }
+                    </span>
+                  </li>
+                  <li className="flex  md:items-center gap-2">
+                    {/*               <div className="h-1.5 w-1.5 rounded-full bg-sky-600"></div>
+                     */}{" "}
+                    <span className="italic text-sky-800 dark:text-sky-400">
+                      {
+                        "- Des outils pour mieux comprendre le but de l'éducation de l'enfant."
+                      }
+                    </span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="italic text-sky-800 dark:text-sky-400">
+                      {
+                        "- Des clés pour une éducation sécure dans la bienveillance."
+                      }
+                    </span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="italic text-sky-800 dark:text-sky-400">
+                      {
+                        "- Un espace d'échange et de partage avec d'autres parents."
+                      }
+                    </span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="italic text-sky-800 dark:text-sky-400">
+                      {
+                        "- Des formations pour approfondir vos connaissances et vos compétences entant que parent."
+                      }
+                    </span>
+                  </li>
+                </ul>
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
+
+          <p className="max-md:hidden">
             <strong className="italic font-semibold">
               {"Eduquer un enfant n'est pas juste mettre des règles!"}
             </strong>{" "}
@@ -59,7 +117,7 @@ export default function Home() {
             }
           </p>
           <br />
-          <ul className="pl-4 md:pl-8 ">
+          <ul className="max-md:hidden pl-4 md:pl-8 ">
             <li className="flex  md:items-center gap-2">
               {/*               <div className="h-1.5 w-1.5 rounded-full bg-sky-600"></div>
                */}{" "}
@@ -96,7 +154,7 @@ export default function Home() {
               </span>
             </li>
           </ul>
-          <br />
+          <br className="max-md:hidden" />
           <div
             onClick={() => router.push("/modules")}
             className="flex  justify-center "

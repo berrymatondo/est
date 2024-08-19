@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import neyla from "../../public/neyla.png";
 import loic2 from "../../public/loic2.png";
+import bruce from "../../public/bruce.png";
 import { Phone } from "lucide-react";
 import { MdEmail } from "react-icons/md";
 import { Separator } from "@radix-ui/react-dropdown-menu";
@@ -9,15 +10,16 @@ import { Separator } from "@radix-ui/react-dropdown-menu";
 const TeamList = () => {
   return (
     <div className="flex flex-col justify-center px-2 gap-4 ">
+      <p className="font-semibold text-sky-600  p-4">Nos Collaborateurs</p>
       <div className="grid grid-cols-4 gap-2 md:gap-4">
         <div>
           {" "}
-          <div className="auto-cols-max	bg-red-400 col-span-1 max-h:w-20	 max-md:w-20  rounded-full overflow-hidden">
+          <div className="auto-cols-max col-span-1 h-20	 w-20 md:h-32 md:w-32  rounded-full overflow-hidden">
             <Image src={neyla} alt="fond" className="flex" />
           </div>
         </div>
         <div className="col-span-3">
-          <p className="max-md:text-sm mb-1">
+          <p className="max-md:text-sm text-xl mb-1 text-sky-600 dark:text-sky-400">
             Neyla <span className="font-semibold">Dewez-Mudi</span>
           </p>
           <p className="max-md:text-xs">
@@ -31,17 +33,36 @@ const TeamList = () => {
       <div className="grid grid-cols-4 gap-2 md:gap-4">
         <div>
           {" "}
-          <div className="auto-cols-max	bg-red-400 col-span-1 max-h:w-20	 max-md:w-20  rounded-full overflow-hidden">
+          <div className="auto-cols-max col-span-1 h-20	 w-20 md:h-32 md:w-32   rounded-full overflow-hidden">
             <Image src={loic2} alt="fond" className="flex" />
           </div>
         </div>
         <div className="col-span-3">
-          <p className="max-md:text-sm mb-1">
+          <p className="max-md:text-sm text-xl mb-1 text-sky-600 dark:text-sky-400">
             Loïc <span className="font-semibold">Dewez</span>
           </p>
           <p className="max-md:text-xs">
             {
-              "En tant qu’ostéopathe diplômé D.O, spécialisé en maternité et chez les nourrissons, ma mission est de m’assurer que chez bébé ainsi que la maman, les structures et les tissus du corps soient parfaitement mobiles, libres et fonctionnent comme ils ont été créés pour le faire.J’exerce depuis 10 ans et je suis heureux de pouvoir vous aider et vous guider."
+              "Ostéopathe diplômé D.O, spécialisé en maternité et chez les nourrissons. Ma mission est de m’assurer que chez bébé ainsi que la maman, les structures et les tissus du corps soient parfaitement mobiles, libres et fonctionnent comme ils ont été créés pour le faire."
+            }
+          </p>
+        </div>
+      </div>
+      <Separator />
+      <div className="grid grid-cols-4 gap-2 md:gap-4">
+        <div>
+          {" "}
+          <div className="auto-cols-max col-span-1 h-20	 w-20 md:h-32 md:w-32  rounded-full overflow-hidden">
+            <Image src={bruce} alt="fond" className="flex" />
+          </div>
+        </div>
+        <div className="col-span-3">
+          <p className="max-md:text-sm text-xl mb-1 text-sky-600 dark:text-sky-400">
+            Bruce <span className="font-semibold">Konzi</span>
+          </p>
+          <p className="max-md:text-xs">
+            {
+              "Je suis puéricultrice de puis plus de 15 ans et également responsable de la nurserie et de la jeunesse dans mon église."
             }
           </p>
         </div>

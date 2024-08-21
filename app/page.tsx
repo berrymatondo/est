@@ -63,7 +63,7 @@ export default function Home() {
                 {"Eduquer un enfant n'est pas juste mettre des règles!"}
               </AccordionTrigger>
               <AccordionContent>
-                <ul className="max-md:hidden pl-4 md:pl-8 ">
+                <ul className="md:hidden pl-4 md:pl-8 ">
                   <li className="flex  md:items-center gap-2">
                     {/*               <div className="h-1.5 w-1.5 rounded-full bg-sky-600"></div>
                      */}{" "}

@@ -60,9 +60,10 @@ const Header = () => {
       <Link href="/" className="font-bold text-4xl text-sky-600 mb-1">
         {/*         <BabyIcon className="" />
          */}{" "}
-        KL
         <span className="font-thin text-lg text-black dark:text-white">
-          Education
+          <strong className="font-bold text-2xl text-sky-600">E</strong>ducation
+          <strong className="font-bold text-2xl text-sky-600">S</strong>ans
+          <strong className="font-bold text-2xl text-sky-600">T</strong>abou
         </span>
       </Link>
       <nav className="max-md:hidden mb-1 flex gap-6 items-center font-semibold ">

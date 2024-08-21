@@ -20,7 +20,7 @@ export default function RootLayout({
       <body
         suppressHydrationWarning={true}
         /*         className=" min-h-dvh flex flex-col bg-gradient-to-tr from-gray-100 to-sky-200/60"
-         */ className=" min-h-dvh flex flex-col md:max-w-3xl mx-auto"
+         */ className=" min-h-dvh flex flex-col md:max-w-5xl mx-auto"
       >
         <ThemeProvider
           attribute="class"

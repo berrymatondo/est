@@ -6,6 +6,7 @@ import bruce from "../../public/bruce.png";
 import kclaisse from "../../public/kclaisse.png";
 import laetitia from "../../public/laetitia.png";
 import gracia from "../../public/gracia.png";
+import yan from "../../public/yan.png";
 import { Phone } from "lucide-react";
 import { MdEmail } from "react-icons/md";
 import { Separator } from "@radix-ui/react-dropdown-menu";
@@ -30,7 +31,7 @@ const TeamList = () => {
             </p>
             <p className="max-md:text-sm">
               {
-                "J'aime travailler avec les enfants et les adolescents. Mon souhait est d'offrir un espace où les possibilités s'ouvrent à nouveau."
+                "Je suis puéricultrice et j'aime travailler avec les enfants et les adolescents. Mon souhait est d'offrir un espace où les possibilités s'ouvrent à nouveau."
               }
             </p>
           </div>
@@ -50,7 +51,7 @@ const TeamList = () => {
             </p>
             <p className="max-md:text-sm">
               {
-                "Ostéopathe diplômé D.O, spécialisé en maternité et chez les nourrissons. Ma mission est de m’assurer que chez bébé ainsi que la maman, les structures et les tissus du corps soient parfaitement mobiles, libres et fonctionnent comme ils ont été créés pour le faire."
+                "Je suis puéricultrice et vraiment pationnée par la petite enfance. Ce projet est un chemin vers l'aboutissement de quelque chose qui me tient à coeur: Voir les enfants épanouis."
               }
             </p>
           </div>
@@ -132,6 +133,24 @@ const TeamList = () => {
             <p className="max-md:text-sm">
               {
                 "Ostéopathe diplômé D.O, spécialisé en maternité et chez les nourrissons. Ma mission est de m’assurer que chez bébé ainsi que la maman, les structures et les tissus du corps soient parfaitement mobiles, libres et fonctionnent comme ils ont été créés pour le faire."
+              }
+            </p>
+          </div>
+        </div>
+        <div className="grid grid-cols-4 gap-2 md:gap-4 bg-neutral-100 rounded-lg p-2  max-md:mb-2">
+          <div>
+            {" "}
+            <div className="auto-cols-max col-span-1 h-20	 w-20 md:h-32 md:w-32   rounded-full overflow-hidden">
+              <Image src={yan} alt="fond" className="flex" />
+            </div>
+          </div>
+          <div className="md:ml-4 col-span-3">
+            <p className="max-md:text-sm text-xl mb-1 text-sky-600 dark:text-sky-400">
+              Yanelle<span className="font-semibold">Ahonlonsou </span>
+            </p>
+            <p className="max-md:text-sm">
+              {
+                "J'exerce la profession de dentiste pour enfants. Mon rôle est d' accompagner, de conseiller (brossage, alimentation,) et de soigner les dents de nos enfants des 2 , 5 ans. "
               }
             </p>
           </div>

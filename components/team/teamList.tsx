@@ -18,7 +18,7 @@ const TeamList = () => {
         Fondatrices
       </p>
       <div className="md:grid md:grid-cols-2 md:gap-2">
-        <div className="grid grid-cols-4 gap-2 md:gap-4 bg-neutral-100 rounded-lg p-2 max-md:mb-2">
+        <div className="grid grid-cols-4 gap-2 md:gap-4  dark:bg-sky-950 bg-neutral-100 rounded-lg p-2 max-md:mb-2">
           <div>
             {" "}
             <div className="auto-cols-max col-span-1 h-20	 w-20 md:h-32 md:w-32  rounded-full overflow-hidden">
@@ -27,7 +27,7 @@ const TeamList = () => {
           </div>
           <div className="md:ml-4 col-span-3">
             <p className="max-md:text-sm text-xl mb-1 text-sky-600 dark:text-sky-400">
-              Kclaisse <span className="font-semibold">Dewez-Mudi</span>
+              Kclaisse <span className="font-semibold">Kimangou</span>
             </p>
             <p className="max-md:text-sm">
               {
@@ -38,7 +38,7 @@ const TeamList = () => {
         </div>
         {/*         <Separator className="md:hidden" />
          */}
-        <div className="grid grid-cols-4 gap-2 md:gap-4 bg-neutral-100 rounded-lg p-2 ">
+        <div className="grid grid-cols-4 gap-2 md:gap-4   dark:bg-sky-950  bg-neutral-100 rounded-lg p-2 ">
           <div>
             {" "}
             <div className="auto-cols-max col-span-1 h-20	 w-20 md:h-32 md:w-32   rounded-full overflow-hidden">
@@ -61,7 +61,7 @@ const TeamList = () => {
         Collaborateurs
       </p>
       <div className="md:grid md:grid-cols-2 md:gap-2">
-        <div className="grid grid-cols-4 gap-2 md:gap-4 bg-neutral-100 rounded-lg p-2 max-md:mb-2">
+        <div className="grid grid-cols-4 gap-2 md:gap-4 dark:bg-sky-950 bg-neutral-100 rounded-lg p-2 max-md:mb-2">
           <div>
             {" "}
             <div className="auto-cols-max col-span-1 h-20	 w-20 md:h-32 md:w-32  rounded-full overflow-hidden">
@@ -79,7 +79,7 @@ const TeamList = () => {
             </p>
           </div>
         </div>
-        <div className="grid grid-cols-4 gap-2 md:gap-4 bg-neutral-100 rounded-lg p-2 max-md:mb-2">
+        <div className="grid grid-cols-4 gap-2 md:gap-4  dark:bg-sky-950  bg-neutral-100 rounded-lg p-2 max-md:mb-2">
           <div>
             {" "}
             <div className="auto-cols-max col-span-1 h-20	 w-20 md:h-32 md:w-32  rounded-full overflow-hidden">
@@ -99,7 +99,7 @@ const TeamList = () => {
         </div>
         {/*       <Separator />
          */}{" "}
-        <div className="grid grid-cols-4 gap-2 md:gap-4 bg-neutral-100 rounded-lg p-2  max-md:mb-2">
+        <div className="grid grid-cols-4 gap-2 md:gap-4  dark:bg-sky-950  bg-neutral-100 rounded-lg p-2  max-md:mb-2">
           <div>
             {" "}
             <div className="auto-cols-max col-span-1 h-20	 w-20 md:h-32 md:w-32  rounded-full overflow-hidden">
@@ -119,7 +119,7 @@ const TeamList = () => {
         </div>
         {/*       <Separator />
          */}{" "}
-        <div className="grid grid-cols-4 gap-2 md:gap-4 bg-neutral-100 rounded-lg p-2  max-md:mb-2">
+        <div className="grid grid-cols-4 gap-2 md:gap-4  dark:bg-sky-950  bg-neutral-100 rounded-lg p-2  max-md:mb-2">
           <div>
             {" "}
             <div className="auto-cols-max col-span-1 h-20	 w-20 md:h-32 md:w-32   rounded-full overflow-hidden">
@@ -137,7 +137,7 @@ const TeamList = () => {
             </p>
           </div>
         </div>
-        <div className="grid grid-cols-4 gap-2 md:gap-4 bg-neutral-100 rounded-lg p-2  max-md:mb-2">
+        <div className="grid grid-cols-4 gap-2 md:gap-4  dark:bg-sky-950  bg-neutral-100 rounded-lg p-2  max-md:mb-2">
           <div>
             {" "}
             <div className="auto-cols-max col-span-1 h-20	 w-20 md:h-32 md:w-32   rounded-full overflow-hidden">

@@ -33,7 +33,11 @@ const LiensList = () => {
                 target="_blank"
                 href="https://www.youtube.com/@Educationsanstabou-l2t"
               >
-                <p className="max-md:text-sm">{"Voici notre chaine youtube"}</p>
+                <p className="max-md:text-sm">
+                  {
+                    "L'éducation de vos enfants, c'est un parcours unique et souvent semé d'embûches. Chez Educationsanstabou, nous sommes là pour vous guider et vous accompagner à chaque étape."
+                  }
+                </p>
               </Link>
             </div>
           </div>
@@ -60,7 +64,11 @@ const LiensList = () => {
                 target="_blank"
                 href="https://www.youtube.com/@kclaisekimsurvivor"
               >
-                <p className="max-md:text-sm">{"Voici notre chaine youtube"}</p>
+                <p className="max-md:text-sm">
+                  {
+                    "Je suis Kclaise, enfant de Dieu, survivante, épouse, mère, auteure et entrepreneure. Ma chaîne est dédiée à partager mon histoire, mon témoignage et à inspirer d'autres personnes à surmonter les épreuves de la vie !"
+                  }
+                </p>
               </Link>
             </div>
           </div>
